@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    tools:context=".activities.UISellerAddProduct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="-22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:text="Add Product"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        app:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/addPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_edittext"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/selector_addphoto"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Add Photo"
+                android:textColor="@color/orangePrimary"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvaaddname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:textColorHint="#B3B3B3"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/orangePrimary"
+        app:hintTextColor="@color/orangePrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addPhoto">
+
+        <EditText
+            android:id="@+id/tvaddname2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Add a Product name"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Add a Product Name"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvdesc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#B3B3B3"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/orangePrimary"
+        app:hintTextColor="@color/orangePrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvaaddname">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Add a Description Product"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Add a Description Product"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvprice"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#B3B3B3"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/orangePrimary"
+        app:hintTextColor="@color/orangePrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvdesc">
+
+        <EditText
+            android:id="@+id/etprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Add a Price"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Add a Price"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvamount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#B3B3B3"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/orangePrimary"
+        app:hintTextColor="@color/orangePrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvprice">
+
+        <EditText
+            android:id="@+id/etamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Enter the Amount of Leftover Food"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Enter the Amount of Leftover Food"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <!--BUTTON SAVE-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/selector_button_main"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:elevation="3dp"
+        android:stateListAnimator="@null"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
