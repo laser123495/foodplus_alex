@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
-    tools:context=".activities.UISellerMyProductList">
+    tools:context=".activities.UISellerMyProductList"
+    android:background="#f9f9f9">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,20 +17,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="13dp"
-        android:text="Your Product"
-        android:textColor="@color/textColorPrimary"
-        android:textSize="20sp"
-        app:fontFamily="@font/poppins_semibold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/tvTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="33dp"-->
+<!--        android:layout_marginTop="13dp"-->
+<!--        android:text="Your Product"-->
+<!--        android:textColor="@color/textColorPrimary"-->
+<!--        android:textSize="20sp"-->
+<!--        app:fontFamily="@font/poppins_semibold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/textView"
@@ -55,205 +56,222 @@
         />
 
 
-    <RelativeLayout
-        android:id="@+id/card"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/croissant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:background="@drawable/selector_button_login"
-        app:layout_constraintTop_toBottomOf="@id/switchCompat"
+        android:elevation="2dp"
         android:layout_marginTop="10dp"
-        android:elevation="2dp">
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
-            android:id="@+id/cardImage"
+            android:id="@+id/imageView1"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            app:srcCompat="@drawable/croissant" />
+            android:src="@drawable/croissant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv1"
+            android:id="@+id/tv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/cardImage"
-            android:layout_marginLeft="10dp"
-            android:textSize="15sp"
-            android:fontFamily="@font/poppins_medium"
-            android:textColor="@color/textColorPrimary"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Croissant" />
+            android:fontFamily="@font/poppins_medium"
+            android:text="Croissant"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv3"
+            android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv1"
-            android:layout_toEndOf="@id/cardImage"
-            android:layout_marginLeft="10dp"
-            android:textSize="10sp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_regular"
+            android:text="3 Left"
             android:textColor="#808080"
-            android:text="3 left" />
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
 
         <Switch
-            android:id="@+id/switchCompat2"
+            android:id="@+id/switch2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:thumb="@drawable/thumb"
             android:track="@drawable/track"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv5"
+            android:id="@+id/tv7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/switchCompat2"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Rp 15.000"
             android:textColor="@color/textColorPrimary"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/iV5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/trash"
+            app:layout_constraintBottom_toBottomOf="@+id/tv8"
+            app:layout_constraintEnd_toStartOf="@+id/tv8"
+            app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/cardImage"
-            android:gravity="center_horizontal">
+            android:fontFamily="@font/poppins_regular"
+            android:text="Delete"
+            android:textColor="@color/orangePrimary"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit"
-                />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toStartOf="@+id/tv9"
+            app:layout_constraintTop_toTopOf="@+id/tv9" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Edit"
-                android:textColor="@color/orangePrimary"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="8dp"
-                android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Edit"
+            android:textColor="@color/orangePrimary"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iV5"
+            app:layout_constraintEnd_toStartOf="@+id/iV5"
+            app:layout_constraintTop_toTopOf="@+id/iV5" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/trash"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Delete"
-                android:textColor="@color/orangePrimary"
-                android:layout_marginLeft="3dp"
-                android:textSize="10sp" />
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:background="@drawable/selector_button_login"
-        app:layout_constraintTop_toBottomOf="@id/card"
-        android:layout_marginTop="13dp"
-        android:elevation="2dp">
+        android:elevation="2dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/croissant">
 
         <ImageView
-            android:id="@+id/cardImage2"
+            android:id="@+id/imageView"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            app:srcCompat="@drawable/whitebread" />
+            android:src="@drawable/whitebread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/cardImage2"
-            android:layout_marginLeft="10dp"
-            android:textSize="15sp"
-            android:fontFamily="@font/poppins_medium"
-            android:textColor="@color/textColorPrimary"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="White Bread" />
+            android:fontFamily="@font/poppins_medium"
+            android:text="White Bread"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView1"
-            android:layout_toEndOf="@id/cardImage2"
-            android:layout_marginLeft="10dp"
-            android:textSize="10sp"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/poppins_regular"
+            android:text="3 Left"
             android:textColor="#808080"
-            android:text="3 left" />
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Switch
-            android:id="@+id/switchCompat3"
+            android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:thumb="@drawable/thumb"
             android:track="@drawable/track"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/switchCompat3"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Rp 15.000"
             android:textColor="@color/textColorPrimary"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/trash"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/cardImage2"
-            android:gravity="center_horizontal">
+            android:fontFamily="@font/poppins_regular"
+            android:text="Delete"
+            android:textColor="@color/orangePrimary"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Edit"
-                android:textColor="@color/orangePrimary"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="8dp"
-                android:textSize="10sp" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Edit"
+            android:textColor="@color/orangePrimary"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/trash"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Delete"
-                android:textColor="@color/orangePrimary"
-                android:layout_marginLeft="3dp"
-                android:textSize="10sp" />
-        </LinearLayout>
-    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

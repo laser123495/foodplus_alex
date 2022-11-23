@@ -13,8 +13,17 @@
         android:theme="@style/Theme.FoodPlus"
         tools:targetApi="31">
         <activity
+            android:name=".activities.profileActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.UISellerMyRestaurant">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.UISellerMyProductList"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".activities.UISellerMyRestaurant">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -35,7 +44,8 @@
         </activity>
         <activity
             android:name=".activities.UISellerProfit"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".activities.UISellerMyRestaurant">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
