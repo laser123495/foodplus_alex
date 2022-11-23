@@ -50,10 +50,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="17dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="21dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="19dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="18dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/editsquare"
                 android:scaleType="fitCenter"
@@ -266,6 +266,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/selector_button_login"
         android:drawableStart="@drawable/document"
+        android:drawableEnd="@drawable/orangekanan"
         android:drawablePadding="10dp"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_semibold"
@@ -289,6 +290,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
         android:drawableStart="@drawable/activity"
+        android:drawableEnd="@drawable/orangekanan"
         android:drawablePadding="10dp"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_semibold"
@@ -313,6 +315,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
         android:drawableStart="@drawable/wallet"
+        android:drawableEnd="@drawable/orangekanan"
         android:drawablePadding="10dp"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_semibold"
@@ -326,7 +329,7 @@
         android:textColor="@color/textColorPrimary"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/btnEditProfileShop"
-        app:layout_constraintTop_toBottomOf="@+id/btnProfit" />
+        app:layout_constraintTop_toBottomOf="@+id/btnperformance" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEditProfileShop"
@@ -336,6 +339,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
         android:drawableStart="@drawable/editsquare"
+        android:drawableEnd="@drawable/orangekanan"
         android:drawablePadding="10dp"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_semibold"
@@ -355,9 +359,35 @@
         android:id="@+id/imageView4"
         android:layout_width="90dp"
         android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/qr"
-        android:elevation="2dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnEditProfileShop"
+        app:srcCompat="@drawable/qr" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnperformance"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_button_login"
+        android:drawableStart="@drawable/chart"
+        android:drawableEnd="@drawable/orangekanan"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:stateListAnimator="@null"
+        android:text="Performance"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfit"
+        tools:layout_editor_absoluteX="14dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
