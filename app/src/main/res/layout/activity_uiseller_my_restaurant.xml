@@ -238,7 +238,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNeworder"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/selector_button_login"
         android:drawableStart="@drawable/neworder"
@@ -261,7 +261,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProductList"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/selector_button_login"
@@ -285,7 +285,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProfit"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -310,7 +310,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnWithDraw"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -334,7 +334,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEditProfileShop"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -369,7 +369,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnperformance"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/selector_button_login"

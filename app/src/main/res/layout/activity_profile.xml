@@ -177,7 +177,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnsecure"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -200,7 +200,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnaddress"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -223,7 +223,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnpayment"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -246,7 +246,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnlanguage"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -269,7 +269,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnbusiness"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -305,7 +305,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnabout"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -328,7 +328,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnrating"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"
@@ -351,7 +351,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnhelp"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="49dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector_button_login"

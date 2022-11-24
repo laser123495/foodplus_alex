@@ -200,8 +200,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnsave"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_height="49dp"
         android:layout_marginTop="18dp"
         android:background="@drawable/selector_button_main"
         android:fontFamily="@font/poppins_semibold"
